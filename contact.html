@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Admissions – Rajalakshmi Engineering College</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="REC" class="logo-img"/>
+      <div class="logo-text-block"><span class="logo-name">Rajalakshmi</span><span class="logo-sub">Engineering College</span></div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#departments">Departments</a></li>
+      <li><a href="index.html#facilities">Facilities</a></li>
+      <li><a href="placements.html">Placements</a></li>
+      <li><a href="rankings.html">Rankings</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta active-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero" style="background-image:url('campus3_e.png')">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-tag">Get In Touch</p>
+    <h1>Contact & <span class="gradient-text">Admissions</span></h1>
+    <p>We'd love to hear from you. Reach out and we'll respond promptly.</p>
+  </div>
+</div>
+
+<section class="section contact" style="background:var(--off-white)">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-form-wrap reveal-left glass-card">
+        <h3 style="font-family:var(--font-head);font-size:1.5rem;color:var(--dark);margin-bottom:1.5rem">Send Us a Message</h3>
+        <form id="contact-form">
+          <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="Your full name" autocomplete="off"/><span class="err" id="err-name"></span></div>
+          <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com" autocomplete="off"/><span class="err" id="err-email"></span></div>
+          <div class="form-group"><label for="subject">Subject</label>
+            <select id="subject" style="width:100%;padding:.85rem 1.1rem;border:1.5px solid var(--gray-200);border-radius:10px;font-family:var(--font-body);font-size:.95rem;color:var(--text);background:var(--white);outline:none;appearance:none">
+              <option value="">Select a subject…</option>
+              <option>Admissions Enquiry</option>
+              <option>Placement Information</option>
+              <option>Research Collaboration</option>
+              <option>Alumni Affairs</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Write your message…"></textarea><span class="err" id="err-msg"></span></div>
+          <button type="submit" class="btn btn-primary btn-ripple"><span>Send Message</span><i class="fa-solid fa-paper-plane"></i></button>
+          <p id="form-success" class="form-success"></p>
+        </form>
+      </div>
+      <div class="contact-info reveal-right">
+        <div class="info-card glass-card"><i class="fa-solid fa-location-dot"></i><div><h4>Address</h4><p>Rajalakshmi Engineering College,<br/>Thandalam, Sriperumbudur,<br/>Chennai – 602 105, Tamil Nadu</p></div></div>
+        <div class="info-card glass-card"><i class="fa-solid fa-phone"></i><div><h4>Phone</h4><p>+91 44 6741 8000<br/>+91 44 6741 8001</p></div></div>
+        <div class="info-card glass-card"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>info@rajalakshmi.edu.in<br/>admissions@rajalakshmi.edu.in</p></div></div>
+        <div class="info-card glass-card"><i class="fa-solid fa-clock"></i><div><h4>Office Hours</h4><p>Monday – Saturday<br/>9:00 AM – 5:00 PM</p></div></div>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0256855285326!2d79.97513391482277!3d12.99951909085346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad4723eb49a475%3A0x87095d62a1e63f2b!2sRajalakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1681000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" title="REC Map"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admissions info -->
+    <div class="section-header reveal-up" style="margin-top:5rem">
+      <p class="section-tag">Join REC</p>
+      <h2 class="section-title">Admissions 2025–26</h2>
+      <p class="section-desc">Everything you need to know about joining Rajalakshmi Engineering College.</p>
+    </div>
+    <div class="process-grid reveal-up">
+      <div class="process-step"><div class="step-num">01</div><i class="fa-solid fa-file-alt"></i><h4>Apply Online</h4><p>Fill the online application form on the official REC website or visit the admissions office with required documents.</p></div>
+      <div class="process-step"><div class="step-num">02</div><i class="fa-solid fa-clipboard-list"></i><h4>Eligibility Check</h4><p>UG: 10+2 with Physics, Chemistry & Maths. TNEA counselling rank accepted. Management quota also available.</p></div>
+      <div class="process-step"><div class="step-num">03</div><i class="fa-solid fa-id-card"></i><h4>Document Verification</h4><p>Submit certificates, mark sheets, community certificate, and passport photos at the admissions counter.</p></div>
+      <div class="process-step"><div class="step-num">04</div><i class="fa-solid fa-check-circle"></i><h4>Confirmation & Fee</h4><p>Pay the semester fee to confirm your seat. Scholarship options available for eligible students.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top"><div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap"><img src="logo.png" class="footer-logo"/><div class="footer-logo-text"><span class="fl-name">Rajalakshmi</span><span class="fl-sub">Engineering College</span></div></div>
+      <p>Empowering engineers and innovators since 1997.</p>
+      <div class="social-icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+    </div>
+    <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="placements.html">Placements</a></li><li><a href="rankings.html">Rankings</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-links"><h4>Contact</h4><ul><li><i class="fa-solid fa-location-dot"></i> Thandalam, Chennai</li><li><i class="fa-solid fa-phone"></i> +91 44 6741 8000</li><li><i class="fa-solid fa-envelope"></i> info@rajalakshmi.edu.in</li></ul></div>
+  </div></div>
+  <div class="footer-bottom"><p>© 2025 Rajalakshmi Engineering College. All Rights Reserved.</p></div>
+</footer>
+<button id="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
